@@ -1,0 +1,28 @@
+h1{
+    color: red;
+    font-family: Helvetica;
+}
+p{
+    font-family: Arial;
+    color: blue;
+}
+.whatever{
+    color: rebeccapurple;
+}
+article{
+    background-color: lightgray;
+    border: 2px;
+    border-style: solid;
+    border-color: limegreen;
+    border-radius: 9px;
+    width: 32%;
+    float: left;
+    font-family: Calibri;
+}
+img{
+    width: 100%;
+}
+.centered{
+    text-align: center;
+    width: 100%;
+}
