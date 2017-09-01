@@ -17,8 +17,9 @@ function onReady() {
 }
 
 // called when the delete button is clicked
+// logs which can is being removed
 function removeCan() {
-    console.log('called removeCan');
+    console.log('removing can number ', $(this).parent().data('color'));
     // console.log($(this).parent());
     $(this).parent().remove();
 }
@@ -31,9 +32,10 @@ function imgClick() {
 
 // append new can objects to the dom
 function addCan() {
-    console.log('called addCan');
+    canCounter++; // increment canCounter
+    console.log('called addCan', canCounter);
     
-    var $canArticle = $('<article>');
+    var $canArticle = $('<article>').data('color', canCounter);
     
     $canArticle.append($('<h3>', {text: 'SPAM'}));
     $canArticle.append($('<img />', {class: 'spam-img', src:'https://upload.wikimedia.org/wikipedia/commons/0/09/Spam_can.png'}));
